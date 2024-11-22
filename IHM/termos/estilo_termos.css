@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  background-color: #ffffff;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.texto {
+  border: 1px solid #0000009d;
+  border-top: transparent;
+  border-bottom: transparent;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 45px 0;
+}
+
+h3 {
+  color: #576d96;
+  padding-top: 40px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 20px 0;
+}
+
+ul {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+li {
+  margin-bottom: 10px;
+  list-style: decimal;
+}
