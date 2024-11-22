@@ -1,0 +1,384 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o corpo do documento */
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header h1 {
+  margin: 0;
+  font-family: "Peralta", serif;
+  letter-spacing: 5px;
+  font-size: 6em;
+  font-style: normal;
+  background: #504b3a;
+  color: #dde392;
+  padding-top: 30px;
+  text-align: center;
+}
+
+header {
+  background: #504b3a;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  padding: 20px;
+  gap: 30px;
+  text-align: right;
+  justify-items: end;
+  margin: 0 auto;
+}
+
+.introducao p {
+  font-size: 1em;
+  padding: 15px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
+.introducao img {
+  max-width: 60%;
+  justify-self: start;
+}
+
+.introducao button {
+  background: #504b3a;
+  color: #ffeded;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: background 0.5s ease;
+}
+
+.introducao button:hover {
+  background: #6a644d;
+}
+
+.introducao button:focus {
+  outline: 2px solid #fff;
+}
+
+/* Navegação */
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #504b3a;
+  color: #dde392;
+  padding: auto;
+  border: 1px solid #dee39230;
+  border-radius: 25px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+/* Estilo dos links da navegação */
+header nav a {
+  color: #dde392;
+  padding: 10px 20px;
+  width: 100%;
+  text-decoration: none;
+  justify-content: center;
+}
+
+header nav a:hover {
+  background: #dee39217;
+  border-radius: 20px;
+  transition-duration: 0.3s;
+}
+
+/* Container principal */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Estilo para seções principais */
+section {
+  padding: 20px 0;
+}
+
+section#showcase {
+  background-image: url("img/Design\ sem\ nome.png");
+  min-height: 300px;
+  padding-top: 80px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+section#showcase h1 {
+  font-size: 1.5em;
+}
+
+section#servicos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #635b5b;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section#servicos .container {
+  display: contents;
+}
+
+.vantagem-container {
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicos-container {
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section#servicos .vantagem {
+  font-family: "Peralta", serif;
+  letter-spacing: 2px;
+  font-size: 64px;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.268);
+  padding: 40px;
+}
+
+section#servicos .servico {
+  text-align: left;
+  gap: 10px 20px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+section#servicos .servico a {
+  text-decoration: none;
+}
+
+section#servicos .servico a h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+section#servicos .servico p {
+  font-size: 1em;
+}
+
+section#sobre {
+  margin-block: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section#sobre .coluna {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  padding-top: 20px;
+  gap: 30px;
+}
+
+section#sobre .coluna img {
+  max-width: 100%;
+  align-self: center;
+}
+
+section#sobre .coluna p {
+  align-self: center;
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Botões */
+button {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #555;
+}
+
+section#contato {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Formulários */
+form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background: #555;
+}
+
+section#contato .enviar {
+  background: #504b3a;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input,
+.label-float textarea {
+  border: 0;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 0;
+  padding: 10px;
+}
+
+.label-float input::placeholder,
+.label-float textarea::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label,
+.label-float textarea:focus + label,
+.label-float textarea:not(:placeholder-shown) + label {
+  font-size: 13px;
+  margin-top: 0;
+}
+
+form div.checkbox label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+form div.checkbox label input {
+  max-width: 12px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  cursor: pointer;
+}
+
+a.checkbox {
+  color: #576d96;
+  text-decoration: underline;
+}
+
+form input[type="submit"] {
+  color: #fff;
+  font-family: "Quicksand", serif;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.5s ease, transform 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  transform: scale(1.03);
+}
+
+form input[type="submit"]:active {
+  transform: scale(1);
+}
+
+section#contato .enviar {
+  background: #504b3a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  section#showcase h1 {
+    font-size: 2.5em;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
