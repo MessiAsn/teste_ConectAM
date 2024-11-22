@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  background-color: #ffffff;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div.texto {
+  border: 1px solid #0000009d;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
+h1 {
+  text-align: center;
+  margin: 45px;
+}
+
+h3 {
+  padding-top: 40px;
+  text-align: center;
+}
+
+p {
+  margin: 20px;
+}
+
+li {
+  margin: 20px;
+  margin-left: 40px;
+}
+
+p.efetiva {
+  color: #33333392;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-size: 15px;
+}
