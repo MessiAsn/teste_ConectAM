@@ -1,10 +1,10 @@
-#  Teste de Formulário com Selenium
+# Teste de Formulário com Selenium
 
 Este projeto é um exemplo de teste automatizado de formulário usando **Selenium** em **Python**. Ele preenche automaticamente os campos de um formulário HTML e testa diferentes cenários de validação.
 
 ---
 
-##  Descrição
+## Descrição
 
 O código realiza testes em um formulário HTML para verificar se os campos obrigatórios (nome, e-mail, telefone e mensagem) são validados corretamente. Três cenários principais são testados:
 
@@ -14,7 +14,7 @@ O código realiza testes em um formulário HTML para verificar se os campos obri
 
 ---
 
-## ⚙️ Configuração
+## Configuração
 
 No arquivo `teste_ConectAM.py`, altere a linha:
 
