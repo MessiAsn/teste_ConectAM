@@ -1,10 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
+import os
 
 driver = webdriver.Chrome()
 driver.maximize_window()
-driver.get("http://127.0.0.1:5500/IHM/index.html")
+path = os.path.join(os.getcwd(), "teste_ConectAM/IHM/index.html")
+driver.get(f"file:///{path}")
 
 def localizar_elementos():
     global name_input, email_input, telefone_input, message_input, submit_button, form
